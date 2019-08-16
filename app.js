@@ -15,6 +15,6 @@ app.get("/registration", (req,res) => {
   res.render("registration",{"district":["Thiruvananthapuram","Kollam","Alappuzha","Pathanamthitta","Kottayam","Idukki","Ernakulam","Thrissur","Palakkad","Malappuram","Kozhikode","Wayanadu","Kannur","Kasaragod"]});
 });
 
-app.listen(3000,() => {
+app.listen(process.env.PORT || 3000,() => {
   console.log("Server is UP and Running");
 });
